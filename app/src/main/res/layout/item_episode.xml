@@ -1,0 +1,36 @@
+<!-- item_episode.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Número de episodio -->
+    <TextView
+        android:id="@+id/textView_episode_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episode #"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:paddingEnd="8dp"/>
+
+    <!-- Título del episodio -->
+    <TextView
+        android:id="@+id/episode_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Episode Title"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- Fecha de emisión -->
+    <TextView
+        android:id="@+id/textView_episode_air_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aired on"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
